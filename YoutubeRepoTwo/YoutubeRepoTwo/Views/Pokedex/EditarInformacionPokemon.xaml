@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="YoutubeRepoTwo.Views.Pokedex.EditarInformacionPokemon"
+             NavigationPage.HasNavigationBar="False"
+             BackgroundColor="#1d1d1d">
+    <ScrollView>
+        <Grid RowDefinitions="80,*" Padding="10">
+            <StackLayout Orientation="Horizontal" Grid.Row="0" Margin="10">
+                <Image Source="flechavolver.png" HeightRequest="40" WidthRequest="40">
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer Command="{Binding Volvercommand}" />
+                    </Image.GestureRecognizers>
+                </Image>
+                <Image Source="https://i.ibb.co/tC1FVWt/Titulo-Universo-Pok-mon.png" HorizontalOptions="CenterAndExpand"/>
+                <Image Source="https://i.ibb.co/zrwJVH6/Pokeball-PNG.png" HorizontalOptions="End" HeightRequest="40"/>
+            </StackLayout>
+            <StackLayout Grid.Row="1" Margin="10">
+                <Entry Text="{Binding PokemonActual.Nombre, Mode=TwoWay}" Placeholder="Ingrese el nombre" FontAttributes="Bold" TextColor="#ffeb72" PlaceholderColor="White" TextTransform="Lowercase" FontSize="20" HorizontalOptions="StartAndExpand"/>
+                <Entry Text="{Binding PokemonActual.Colorfondo, Mode=TwoWay}" Placeholder="Ingrese color fondo" FontAttributes="Bold" TextColor="{Binding PokemonActual.Colorfondo}" PlaceholderColor="White" TextTransform="Lowercase" FontSize="20" HorizontalOptions="StartAndExpand"/>
+                <Entry Text="{Binding PokemonActual.Nroorden, Mode=TwoWay}" Placeholder="Ingrese Nro" FontAttributes="Bold" TextColor="White" PlaceholderColor="White" TextTransform="Lowercase" FontSize="20" HorizontalOptions="StartAndExpand"/>
+                <Entry Text="{Binding PokemonActual.Icono, Mode=TwoWay}" Placeholder="Ingrese icono" FontAttributes="Bold" TextColor="White" PlaceholderColor="White" TextTransform="Lowercase" FontSize="20" HorizontalOptions="StartAndExpand"/>
+                <Entry Text="{Binding PokemonActual.Poder, Mode=TwoWay}" Placeholder="Ingrese poder" FontAttributes="Bold" TextColor="White" PlaceholderColor="White" TextTransform="Lowercase" FontSize="20" HorizontalOptions="StartAndExpand"/>
+                <Entry Text="{Binding PokemonActual.Colorpoder, Mode=TwoWay}" Placeholder="Ingrese color poder" FontAttributes="Bold" TextColor="{Binding PokemonActual.Colorpoder}" PlaceholderColor="White" TextTransform="Lowercase" FontSize="20" HorizontalOptions="StartAndExpand"/>
+                <Button Text="Actualizar" Command="{Binding ActualizarPokemonCommand}" BackgroundColor="#FFCB05" TextColor="Black" FontAttributes="Bold" CornerRadius="10" Margin="10" HorizontalOptions="FillAndExpand"/>
+            </StackLayout>
+        </Grid>
+    </ScrollView>
+</ContentPage>

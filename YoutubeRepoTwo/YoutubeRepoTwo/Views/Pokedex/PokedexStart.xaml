@@ -1,0 +1,53 @@
+﻿<!-- PokedexStart.xaml -->
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="YoutubeRepoTwo.Views.Pokedex.PokedexStart"
+             Title="Pokédex"
+             BackgroundColor="#E51C23">
+    <ContentPage.Content>
+        <Grid Padding="20" HorizontalOptions="FillAndExpand" VerticalOptions="CenterAndExpand" RowSpacing="10">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+
+            
+            <!-- Título Pokédex -->
+            <Image Source="pokedex_title.png" Grid.Row="1" HorizontalOptions="Center" HeightRequest="60" Aspect="AspectFit"/>
+            <!-- Logo de Pokédex -->
+            <Image Source="pokedex_logo.png" Grid.Row="0" HorizontalOptions="Center" HeightRequest="120" Aspect="AspectFit"/>
+            <!-- Descripción -->
+            <Label Text="Encuentra información sobre todos los Pokémon" 
+                   FontFamily="Montserrat"
+                   FontSize="16"
+                   TextColor="White"
+                   HorizontalOptions="Center"
+                   Grid.Row="2"/>
+
+            <!-- Botón de Iniciar Sesión -->
+            <Button Text="INICIAR SESIÓN" 
+                    BackgroundColor="#FFCB05"
+                    TextColor="#000000"
+                    FontAttributes="Bold"
+                    FontSize="16"
+                    CornerRadius="10"
+                    Margin="10"
+                    Grid.Row="3"
+                    Clicked="OnLoginClicked"/>
+
+            <!-- Botón de Registrarse -->
+            <Button Text="REGISTRARSE" 
+                    BackgroundColor="#3B4CCA"
+                    TextColor="White"
+                    FontAttributes="Bold"
+                    FontSize="16"
+                    CornerRadius="10"
+                    Margin="10"
+                    Grid.Row="4"
+                    Clicked="OnRegisterClicked"/>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

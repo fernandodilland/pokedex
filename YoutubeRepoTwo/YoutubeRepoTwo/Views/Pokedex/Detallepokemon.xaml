@@ -1,0 +1,109 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="YoutubeRepoTwo.Views.Pokedex.Detallepokemon"
+             NavigationPage.HasNavigationBar="False"
+             BackgroundColor="#E51C23">
+    <Grid Padding="10">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <!-- Barra Superior con Volver, Logo y Pokebola -->
+        <StackLayout Orientation="Horizontal"
+                     Margin="10"
+                     Grid.Row="0">
+            <Image Source="https://i.ibb.co/r6d9rnQ/volver.png"
+                   HeightRequest="25"
+                   HorizontalOptions="Start"
+                   Margin="10,20,0,0">
+                <Image.GestureRecognizers>
+                    <TapGestureRecognizer Command="{Binding Volvercommand}"/>
+                </Image.GestureRecognizers>
+            </Image>
+            <Image Source="https://i.ibb.co/tC1FVWt/Titulo-Universo-Pok-mon.png"
+                   HorizontalOptions="CenterAndExpand"/>
+            <Image Source="https://i.ibb.co/zrwJVH6/Pokeball-PNG.png"/>
+        </StackLayout>
+
+        <!-- Detalles del Pokémon dentro de un marco principal -->
+        <ScrollView Grid.Row="1">
+            <Frame BackgroundColor="LightGray"
+                   CornerRadius="20"
+                   Padding="10"
+                   Margin="5">
+                <StackLayout Spacing="10"
+                             HorizontalOptions="Center"
+                             VerticalOptions="Center">
+
+                    <!-- Título Pokémon y Número de Orden en Encabezado llamativo -->
+                    <Label FontSize="28"
+                           FontAttributes="Bold"
+                           TextColor="Black"
+                           HorizontalOptions="Center">
+                        <Label.Text>
+                            <MultiBinding StringFormat="{}{0} #{1}">
+                                <Binding Path="parametrosRecibe.Nombre" />
+                                <Binding Path="parametrosRecibe.Nroorden" />
+                            </MultiBinding>
+                        </Label.Text>
+                    </Label>
+
+                    <!-- Icono del Pokémon enmarcado -->
+                    <Frame BackgroundColor="White"
+                           CornerRadius="20"
+                           Padding="15">
+                        <Image Source="{Binding parametrosRecibe.Icono}"
+                               HeightRequest="200"/>
+                    </Frame>
+
+                    <!-- Detalles del Poder y Número de Orden con colores representativos -->
+                    <StackLayout Orientation="Vertical"
+                                 Spacing="10"
+                                 HorizontalOptions="Center">
+                        <Frame BackgroundColor="{Binding parametrosRecibe.Colorpoder}"
+                               Padding="15"
+                               CornerRadius="10">
+                            <StackLayout HorizontalOptions="StartAndExpand"
+                                         VerticalOptions="Center"
+                                         Spacing="5">
+                                <Label Text="Poder:"
+                                       FontSize="20"
+                                       TextColor="White"
+                                       FontAttributes="Bold"/>
+                                <Label Text="{Binding parametrosRecibe.Poder}"
+                                       FontSize="18"
+                                       TextColor="White"/>
+                            </StackLayout>
+                        </Frame>
+
+                        <Frame BackgroundColor="{Binding parametrosRecibe.Colorfondo}"
+                               Padding="15"
+                               CornerRadius="10">
+                            <StackLayout HorizontalOptions="EndAndExpand"
+                                         VerticalOptions="Center"
+                                         Spacing="5">
+                                <Label Text="Orden:"
+                                       FontSize="20"
+                                       TextColor="White"
+                                       FontAttributes="Bold"/>
+                                <Label Text="{Binding parametrosRecibe.Nroorden}"
+                                       FontSize="18"
+                                       TextColor="White"/>
+                            </StackLayout>
+                        </Frame>
+
+                        <!-- Botón para Editar Información del Pokémon -->
+                        <Button Text="Editar Información"
+                                BackgroundColor="#4CAF50"
+                                TextColor="White"
+                                CornerRadius="20"
+                                Margin="20,10,20,10"
+                                Command="{Binding EditarInformacionCommand}"/>
+                    </StackLayout>
+                </StackLayout>
+            </Frame>
+        </ScrollView>
+    </Grid>
+</ContentPage>

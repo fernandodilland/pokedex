@@ -1,0 +1,62 @@
+﻿<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:vm="clr-namespace:YoutubeRepoTwo.ViewModels"  
+             x:Class="YoutubeRepoTwo.Views.Pokedex.PokedexRegistro"
+             Title="Registro en Pokédex"
+             BackgroundColor="#E51C23">
+
+    <ContentPage.BindingContext>
+        <vm:PokedexRegistroViewModel />
+    </ContentPage.BindingContext>
+
+    <ScrollView>
+        <StackLayout Padding="30" Spacing="20" HorizontalOptions="FillAndExpand" VerticalOptions="CenterAndExpand">
+            <Image Source="pokedex_logo.png" Aspect="AspectFit" HeightRequest="120" HorizontalOptions="Center"/>
+
+            <!-- Nombre -->
+            <Label Text="Nombre" TextColor="White" FontSize="Medium"/>
+            <Frame CornerRadius="20" Padding="3" HasShadow="false" BackgroundColor="White">
+                <Entry Text="{Binding User.Name}" Placeholder="Nombre(s)" Keyboard="Default" FontSize="Small" />
+            </Frame>
+
+            <!-- Apellido Paterno -->
+            <Label Text="Apellido Paterno" TextColor="White" FontSize="Medium"/>
+            <Frame CornerRadius="20" Padding="3" HasShadow="false" BackgroundColor="White">
+                <Entry Text="{Binding User.LastNameP}" Placeholder="Apellido Paterno" Keyboard="Default" FontSize="Small" />
+            </Frame>
+
+            <!-- Apellido Materno -->
+            <Label Text="Apellido Materno" TextColor="White" FontSize="Medium"/>
+            <Frame CornerRadius="20" Padding="3" HasShadow="false" BackgroundColor="White">
+                <Entry Text="{Binding User.LastNameM}" Placeholder="Apellido Materno" Keyboard="Default" FontSize="Small" />
+            </Frame>
+
+            <!-- Nombre de Usuario -->
+            <Label Text="Nombre de Usuario" TextColor="White" FontSize="Medium"/>
+            <Frame CornerRadius="20" Padding="3" HasShadow="false" BackgroundColor="White">
+                <Entry Text="{Binding User.Username}" Placeholder="Nombre de Usuario" Keyboard="Default" FontSize="Small" />
+            </Frame>
+
+            <!-- Fecha de Nacimiento -->
+            <Label Text="Fecha de Nacimiento" TextColor="White" FontSize="Medium"/>
+            <Frame CornerRadius="20" Padding="3" HasShadow="false" BackgroundColor="White">
+                <DatePicker Date="{Binding User.Birthdate}" FontSize="Small" />
+            </Frame>
+
+            <!-- Correo Electrónico -->
+            <Label Text="Correo Electrónico" TextColor="White" FontSize="Medium"/>
+            <Frame CornerRadius="20" Padding="3" HasShadow="false" BackgroundColor="White">
+                <Entry Text="{Binding User.Email}" Placeholder="ejemplo@dominio.com" Keyboard="Email" FontSize="Small" />
+            </Frame>
+
+            <!-- Contraseña -->
+            <Label Text="Contraseña" TextColor="White" FontSize="Medium"/>
+            <Frame CornerRadius="20" Padding="3" HasShadow="false" BackgroundColor="White">
+                <Entry Text="{Binding User.Password}" Placeholder="Contraseña" IsPassword="true" Keyboard="Default" FontSize="Small" />
+            </Frame>
+
+            <!-- Botón Registrar -->
+            <Button Text="Registrar" Command="{Binding RegisterCommand}" BackgroundColor="#FFCB05" TextColor="#000000" FontAttributes="Bold" FontSize="16" CornerRadius="10" Margin="10" HorizontalOptions="FillAndExpand"/>
+        </StackLayout>
+    </ScrollView>
+</ContentPage>

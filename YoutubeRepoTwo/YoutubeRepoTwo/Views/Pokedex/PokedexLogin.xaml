@@ -1,0 +1,22 @@
+﻿<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:viewModels="clr-namespace:YoutubeRepoTwo.ViewModels"
+             x:Class="YoutubeRepoTwo.Views.Pokedex.PokedexLogin"
+             Title="Iniciar Sesión en Pokédex"
+             BackgroundColor="#E51C23">
+    <ContentPage.BindingContext>
+        <viewModels:PokedexLoginViewModel />
+    </ContentPage.BindingContext>
+    <StackLayout Padding="30" Spacing="20" VerticalOptions="Center">
+        <Image Source="pokedex_title.png" Aspect="AspectFit" HeightRequest="120" HorizontalOptions="Center"/>
+        <Label Text="Bienvenido a Pokédex" FontSize="Large" TextColor="White" HorizontalOptions="Center"/>
+        <Label Text="Por favor, inicia sesión con tu cuenta" FontSize="Small" TextColor="White" HorizontalOptions="Center"/>
+        <Frame CornerRadius="20" Padding="3" HasShadow="false" BackgroundColor="White">
+            <Entry x:Name="emailEntry" Placeholder="Correo electrónico" Keyboard="Email" TextColor="Black" PlaceholderColor="Gray" BackgroundColor="White" Text="{Binding Email}" />
+        </Frame>
+        <Frame CornerRadius="20" Padding="3" HasShadow="false" BackgroundColor="White">
+            <Entry x:Name="passwordEntry" Placeholder="Contraseña" IsPassword="true" TextColor="Black" PlaceholderColor="Gray" BackgroundColor="White" Text="{Binding Password}" />
+        </Frame>
+        <Button Text="Iniciar sesión" Command="{Binding LoginCommand}" BackgroundColor="#FFCB05" TextColor="#000000" FontAttributes="Bold"/>
+    </StackLayout>
+</ContentPage>

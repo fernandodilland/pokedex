@@ -1,0 +1,85 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Repositorios\\PokeDexApp\\PokeDexApp\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{D23D852F-6401-443C-BF5A-B77CB72A1B5D}|YoutubeRepoTwo\\YoutubeRepoTwo\\YoutubeRepoTwo.csproj|c:\\repositorios\\pokedexapp\\pokedexapp\\youtuberepotwo\\youtuberepotwo\\viewmodels\\pokedexloginviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D23D852F-6401-443C-BF5A-B77CB72A1B5D}|YoutubeRepoTwo\\YoutubeRepoTwo\\YoutubeRepoTwo.csproj|solutionrelative:youtuberepotwo\\youtuberepotwo\\viewmodels\\pokedexloginviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D23D852F-6401-443C-BF5A-B77CB72A1B5D}|YoutubeRepoTwo\\YoutubeRepoTwo\\YoutubeRepoTwo.csproj|c:\\repositorios\\pokedexapp\\pokedexapp\\youtuberepotwo\\youtuberepotwo\\viewmodels\\vmeditarperfilusuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D23D852F-6401-443C-BF5A-B77CB72A1B5D}|YoutubeRepoTwo\\YoutubeRepoTwo\\YoutubeRepoTwo.csproj|solutionrelative:youtuberepotwo\\youtuberepotwo\\viewmodels\\vmeditarperfilusuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D23D852F-6401-443C-BF5A-B77CB72A1B5D}|YoutubeRepoTwo\\YoutubeRepoTwo\\YoutubeRepoTwo.csproj|c:\\repositorios\\pokedexapp\\pokedexapp\\youtuberepotwo\\youtuberepotwo\\views\\pokedex\\editarperfilusuario.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D23D852F-6401-443C-BF5A-B77CB72A1B5D}|YoutubeRepoTwo\\YoutubeRepoTwo\\YoutubeRepoTwo.csproj|solutionrelative:youtuberepotwo\\youtuberepotwo\\views\\pokedex\\editarperfilusuario.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D23D852F-6401-443C-BF5A-B77CB72A1B5D}|YoutubeRepoTwo\\YoutubeRepoTwo\\YoutubeRepoTwo.csproj|c:\\repositorios\\pokedexapp\\pokedexapp\\youtuberepotwo\\youtuberepotwo\\viewmodels\\vmlistapokemon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D23D852F-6401-443C-BF5A-B77CB72A1B5D}|YoutubeRepoTwo\\YoutubeRepoTwo\\YoutubeRepoTwo.csproj|solutionrelative:youtuberepotwo\\youtuberepotwo\\viewmodels\\vmlistapokemon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "PokedexLoginViewModel.cs",
+              "DocumentMoniker": "C:\\Repositorios\\PokeDexApp\\PokeDexApp\\YoutubeRepoTwo\\YoutubeRepoTwo\\ViewModels\\PokedexLoginViewModel.cs",
+              "RelativeDocumentMoniker": "YoutubeRepoTwo\\YoutubeRepoTwo\\ViewModels\\PokedexLoginViewModel.cs",
+              "ToolTip": "C:\\Repositorios\\PokeDexApp\\PokeDexApp\\YoutubeRepoTwo\\YoutubeRepoTwo\\ViewModels\\PokedexLoginViewModel.cs",
+              "RelativeToolTip": "YoutubeRepoTwo\\YoutubeRepoTwo\\ViewModels\\PokedexLoginViewModel.cs",
+              "ViewState": "AQIAAEYAAAAAAAAAAAAmwFEAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-13T23:18:24.374Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "EditarPerfilUsuario.xaml.cs",
+              "DocumentMoniker": "C:\\Repositorios\\PokeDexApp\\PokeDexApp\\YoutubeRepoTwo\\YoutubeRepoTwo\\Views\\Pokedex\\EditarPerfilUsuario.xaml.cs",
+              "RelativeDocumentMoniker": "YoutubeRepoTwo\\YoutubeRepoTwo\\Views\\Pokedex\\EditarPerfilUsuario.xaml.cs",
+              "ToolTip": "C:\\Repositorios\\PokeDexApp\\PokeDexApp\\YoutubeRepoTwo\\YoutubeRepoTwo\\Views\\Pokedex\\EditarPerfilUsuario.xaml.cs",
+              "RelativeToolTip": "YoutubeRepoTwo\\YoutubeRepoTwo\\Views\\Pokedex\\EditarPerfilUsuario.xaml.cs",
+              "ViewState": "AQIAAAQAAAAAAAAAAAAmwBIAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-13T23:00:28.192Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "VMlistapokemon.cs",
+              "DocumentMoniker": "C:\\Repositorios\\PokeDexApp\\PokeDexApp\\YoutubeRepoTwo\\YoutubeRepoTwo\\ViewModels\\VMlistapokemon.cs",
+              "RelativeDocumentMoniker": "YoutubeRepoTwo\\YoutubeRepoTwo\\ViewModels\\VMlistapokemon.cs",
+              "ToolTip": "C:\\Repositorios\\PokeDexApp\\PokeDexApp\\YoutubeRepoTwo\\YoutubeRepoTwo\\ViewModels\\VMlistapokemon.cs",
+              "RelativeToolTip": "YoutubeRepoTwo\\YoutubeRepoTwo\\ViewModels\\VMlistapokemon.cs",
+              "ViewState": "AQIAAEoAAAAAAAAAAAAAAFcAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-13T22:56:50.68Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "VMEditarPerfilUsuario.cs",
+              "DocumentMoniker": "C:\\Repositorios\\PokeDexApp\\PokeDexApp\\YoutubeRepoTwo\\YoutubeRepoTwo\\ViewModels\\VMEditarPerfilUsuario.cs",
+              "RelativeDocumentMoniker": "YoutubeRepoTwo\\YoutubeRepoTwo\\ViewModels\\VMEditarPerfilUsuario.cs",
+              "ToolTip": "C:\\Repositorios\\PokeDexApp\\PokeDexApp\\YoutubeRepoTwo\\YoutubeRepoTwo\\ViewModels\\VMEditarPerfilUsuario.cs",
+              "RelativeToolTip": "YoutubeRepoTwo\\YoutubeRepoTwo\\ViewModels\\VMEditarPerfilUsuario.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAqwAUAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-13T22:56:23.154Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
